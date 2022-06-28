@@ -113,7 +113,7 @@ class KinoRepository {
         val mutableLiveDataKinoList=MutableLiveData<ArrayList<Kino>>()
 
 
-        database?.getReference("Kino")?.addListenerForSingleValueEvent(object : ValueEventListener {
+        database?.getReference("Kino")?.addValueEventListener(object : ValueEventListener {
             override fun onDataChange(snapshot: DataSnapshot) {
                 val commonList=ArrayList<Kino>()
                 for (kino in snapshot.children){
