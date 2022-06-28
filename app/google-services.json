@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "575929452647",
+    "project_id": "kinoinfo-79613",
+    "storage_bucket": "kinoinfo-79613.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:575929452647:android:10fb8de1d4e580c8096cc2",
+        "android_client_info": {
+          "package_name": "com.company.kinoinfo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "575929452647-apf8hbholdgcms3ag0gbi88on5vd9r1c.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.company.kinoinfo",
+            "certificate_hash": "fe4e9bc1c7296759fc9245eed3eb89e82f4db492"
+          }
+        },
+        {
+          "client_id": "575929452647-c9u7ptsh4sg61gelmsdvkku93ag2ao5e.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA3N1bHCRk4Ljc7KNsUwKVLoDiNDbMc2wc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "575929452647-c9u7ptsh4sg61gelmsdvkku93ag2ao5e.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
