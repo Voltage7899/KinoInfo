@@ -1,4 +1,4 @@
-package com.company.kinoinfo
+package com.company.kinoinfo.DataBase
 
 import com.google.firebase.database.FirebaseDatabase
 

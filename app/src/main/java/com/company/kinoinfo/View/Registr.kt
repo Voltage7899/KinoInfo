@@ -1,11 +1,12 @@
-package com.company.kinoinfo
+package com.company.kinoinfo.View
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
 import androidx.activity.viewModels
-import com.company.kinoinfo.databinding.ActivityRegSignBinding
+import com.company.kinoinfo.Model.Admin
+import com.company.kinoinfo.ViewModel.RegSingViewModel
 import com.company.kinoinfo.databinding.ActivityRegistrBinding
 
 class Registr : AppCompatActivity() {
@@ -33,7 +34,7 @@ class Registr : AppCompatActivity() {
 
                 }
                 else{
-                    val admin=Admin(phone,name,pass)
+                    val admin= Admin(phone,name,pass)
                     regSingViewModel.regInsertViewModel(admin)
                     startActivity(Intent(this, RegSign::class.java))
                 }

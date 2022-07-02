@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#77A2ED"
-    tools:context=".AddKino">
+    tools:context=".View.AddKino">
 
     <EditText
         android:id="@+id/addName"

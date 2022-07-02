@@ -1,16 +1,18 @@
-package com.company.kinoinfo
+package com.company.kinoinfo.View
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.activity.viewModels
+import com.company.kinoinfo.Model.Kino
+import com.company.kinoinfo.ViewModel.AddGetKinoViewModel
 import com.company.kinoinfo.databinding.ActivityEditBinding
 import com.squareup.picasso.Picasso
 
 class EditActivity : AppCompatActivity() {
 
     lateinit var binding: ActivityEditBinding
-    private val addGetKinoViewModel:AddGetKinoViewModel by viewModels()
+    private val addGetKinoViewModel: AddGetKinoViewModel by viewModels()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -26,14 +28,14 @@ class EditActivity : AppCompatActivity() {
         }
 
         binding.update.setOnClickListener {
-            val kinoUpdate=Kino(binding.editTitle.text.toString(),kino.image,binding.editDesc.text.toString())
+            val kinoUpdate= Kino(binding.editTitle.text.toString(),kino.image,binding.editDesc.text.toString())
             addGetKinoViewModel.updateKinoViewModel(kinoUpdate)
-            startActivity(Intent(this,AdminList::class.java))
+            startActivity(Intent(this, AdminList::class.java))
         }
         binding.delete.setOnClickListener {
-            val kinoRemove=Kino(binding.editTitle.text.toString(),kino.image,binding.editDesc.text.toString())
+            val kinoRemove= Kino(binding.editTitle.text.toString(),kino.image,binding.editDesc.text.toString())
             addGetKinoViewModel.removeKinoViewModel(kinoRemove)
-            startActivity(Intent(this,AdminList::class.java))
+            startActivity(Intent(this, AdminList::class.java))
 
         }
     }

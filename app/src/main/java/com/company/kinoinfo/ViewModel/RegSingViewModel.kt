@@ -1,8 +1,9 @@
-package com.company.kinoinfo
+package com.company.kinoinfo.ViewModel
 
 import androidx.lifecycle.LiveData
-import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
+import com.company.kinoinfo.Model.Admin
+import com.company.kinoinfo.Repository.Repository
 
 class RegSingViewModel :ViewModel(){
 

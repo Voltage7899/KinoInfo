@@ -1,23 +1,21 @@
-package com.company.kinoinfo
+package com.company.kinoinfo.View
 
-import android.app.ProgressDialog
-import android.content.ContentValues.TAG
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.DisplayMetrics
-import android.util.Log
-import android.view.Display
 import android.view.LayoutInflater
 import android.view.animation.AnimationUtils
 import android.widget.AdapterView
 import android.widget.TextView
-import android.widget.Toast
 import androidx.activity.viewModels
 import androidx.appcompat.app.AlertDialog
 import androidx.lifecycle.Observer
+import com.company.kinoinfo.Adapters.KinoApadter
+import com.company.kinoinfo.Model.Kino
+import com.company.kinoinfo.R
+import com.company.kinoinfo.ViewModel.AddGetKinoViewModel
 import com.company.kinoinfo.databinding.ActivityAdminListBinding
-import com.company.kinoinfo.databinding.ActivityMainBinding
 import it.moondroid.coverflow.components.ui.containers.FeatureCoverFlow
 
 
@@ -26,7 +24,7 @@ class AdminList : AppCompatActivity() {
     private lateinit var binding: ActivityAdminListBinding
     private lateinit var loadDialog: AlertDialog
     private val addGetKinoViewModel : AddGetKinoViewModel by viewModels()
-    private lateinit var adapter:KinoApadter
+    private lateinit var adapter: KinoApadter
     private lateinit var listKino:ArrayList<Kino>
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -36,7 +34,7 @@ class AdminList : AppCompatActivity() {
 
 
         binding.addKino.setOnClickListener {
-            startActivity(Intent(this,AddKino::class.java))
+            startActivity(Intent(this, AddKino::class.java))
         }
         loadData()
 
@@ -54,7 +52,7 @@ class AdminList : AppCompatActivity() {
 
         })
         binding.coverFlowAdmin.onItemClickListener=AdapterView.OnItemClickListener{adapterView, view, i, l ->
-            val intent=Intent(this,UserDet::class.java)
+            val intent=Intent(this, EditActivity::class.java)
             intent.putExtra("item",listKino.get(i))
             startActivity(intent)
         }
@@ -79,7 +77,7 @@ class AdminList : AppCompatActivity() {
 
         })
         while(listKino.size<3){
-            val kinoTest1=Kino("test","https://static.tildacdn.com/tild3331-3639-4463-b932-616635323361/the-question-mark-20.png","test")
+            val kinoTest1= Kino("test","https://static.tildacdn.com/tild3331-3639-4463-b932-616635323361/the-question-mark-20.png","test")
             listKino.add(kinoTest1)
 
         }

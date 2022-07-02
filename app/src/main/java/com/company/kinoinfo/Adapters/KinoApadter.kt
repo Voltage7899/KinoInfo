@@ -1,4 +1,4 @@
-package com.company.kinoinfo
+package com.company.kinoinfo.Adapters
 
 import android.content.Context
 import android.view.LayoutInflater
@@ -7,6 +7,8 @@ import android.view.ViewGroup
 import android.widget.BaseAdapter
 import android.widget.ImageView
 import android.widget.TextView
+import com.company.kinoinfo.Model.Kino
+import com.company.kinoinfo.R
 import com.squareup.picasso.Picasso
 
 class KinoApadter(private val context: Context,private var kinoList:ArrayList<Kino>) :BaseAdapter(){

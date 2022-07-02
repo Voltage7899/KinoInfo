@@ -1,4 +1,4 @@
-package com.company.kinoinfo
+package com.company.kinoinfo.Model
 
 import java.io.Serializable
 

@@ -1,4 +1,4 @@
-package com.company.kinoinfo
+package com.company.kinoinfo.View
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
@@ -6,7 +6,8 @@ import android.os.Bundle
 import android.widget.Toast
 import androidx.activity.viewModels
 import androidx.lifecycle.Observer
-import com.company.kinoinfo.databinding.ActivityMainBinding
+import com.company.kinoinfo.R
+import com.company.kinoinfo.ViewModel.RegSingViewModel
 import com.company.kinoinfo.databinding.ActivityRegSignBinding
 
 class RegSign : AppCompatActivity() {
@@ -32,7 +33,7 @@ class RegSign : AppCompatActivity() {
             true
         }
         binding.register.setOnClickListener {
-            startActivity(Intent(this,Registr::class.java))
+            startActivity(Intent(this, Registr::class.java))
         }
         binding.sing.setOnClickListener {
             val pass=binding.password.text.toString()
@@ -43,7 +44,7 @@ class RegSign : AppCompatActivity() {
                     if(it){
 
                         Toast.makeText(this,"Добро пожаловать!",Toast.LENGTH_SHORT).show()
-                        startActivity(Intent(this,AdminList::class.java))
+                        startActivity(Intent(this, AdminList::class.java))
 
                     }
                     else{
