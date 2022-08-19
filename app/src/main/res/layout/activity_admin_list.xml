@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#77A2ED"
+    android:background="#CD0074"
     tools:context=".View.AdminList"
     >
 
@@ -34,7 +34,7 @@
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="10dp"
-        android:background="#E485F4"
+        android:background="#00CC00"
         />
 
 

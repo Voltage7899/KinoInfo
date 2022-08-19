@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/drawer"
     android:layout_width="match_parent"
-    android:background="#77A2ED"
+    android:background="#CD0074"
     android:layout_height="match_parent">
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -16,7 +16,7 @@
             android:id="@+id/signRegBottomMenu"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:background="#D77DE6"
+            android:background="#00CC00"
             app:itemIconSize="45dp"
 
             app:itemIconTint="@drawable/selector"
@@ -32,7 +32,7 @@
             android:id="@+id/sing"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:background="#58F15A"
+            android:background="#00CC00"
             android:text="Вход"
             app:layout_constraintBottom_toTopOf="@+id/signRegBottomMenu"
             app:layout_constraintEnd_toEndOf="parent"
@@ -45,7 +45,7 @@
             android:id="@+id/register"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:background="#58F15A"
+            android:background="#00CC00"
             android:text="Регистрация"
             app:layout_constraintBottom_toTopOf="@+id/signRegBottomMenu"
             app:layout_constraintEnd_toEndOf="parent"

@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#77A2ED"
+    android:background="#CD0074"
     tools:context=".View.EditActivity">
 
     <io.github.florent37.shapeofview.shapes.DiagonalView
@@ -26,7 +26,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_alignParentBottom="true"
-                android:background="#E485F4"
+                android:background="#00CC00"
                 android:orientation="vertical">
 
                 <TextView

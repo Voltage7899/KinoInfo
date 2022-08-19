@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/drawer"
     android:layout_width="match_parent"
-    android:background="#77A2ED"
+    android:background="#CD0074"
     android:layout_height="match_parent">
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -37,7 +37,7 @@
             android:id="@+id/bottom_menu"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:background="#E485F4"
+            android:background="#9FEE00"
             app:itemIconSize="45dp"
 
             app:itemIconTint="@drawable/selector"
